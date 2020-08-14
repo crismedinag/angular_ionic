@@ -1,0 +1,51 @@
+<div class="row justify-content-center">
+
+  <div class="volver col-md-1">
+    <a (click)="_location.back()"><i class="fas fa-arrow-circle-left"></i></a>
+  </div>
+
+  <div class="datos col-md-5">
+    <button type="button" class="btn" id="btn" (click)="getAll()">Todas las ciudades</button>
+    <div *ngIf="vista_ciudades!=null">
+      <table class="table table-responsive" *ngFor="let ciudad of vista_ciudades; let indice = index">
+        <thead>
+          <tr>
+              <th>Nombre</th>
+              <th>Pais</th>
+              <th>Código</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>{{ ciudad.nombre }}</td>
+              <td>{{ ciudad.pais }}</td>
+              <td>{{ ciudad.codigo }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-md-5">
+    <button type="button" class="btn" id="btn" (click)="getOne(codigoM.value)">Una ciudad</button>
+    <input type="text" class="form-control" placeholder="Código de la ciudad" #codigoM> <br>
+    <table class="table table-responsive" *ngIf="vista_ciudad!=null">
+      <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Pais</th>
+            <th>Código</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>{{ vista_ciudad.nombre }}</td>
+            <td>{{ vista_ciudad.pais }}</td>
+            <td>{{ vista_ciudad.codigo }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+

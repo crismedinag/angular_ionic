@@ -1,0 +1,43 @@
+.row{
+    margin-top: 80px;
+}
+
+tbody{
+    background-color: var(--shadow-color);
+    color: var(--primary-color);
+}
+
+.table{
+    margin-top: 15px;
+}
+
+.btn{
+    background-color: var(--shadow-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.datos{
+    overflow-y: scroll;
+    height: 40rem;
+    
+}
+
+.volver{
+    margin-top: 10px;
+    font-size: 2.2em;
+    color: var(--secondary-color);
+    cursor: pointer; 
+}
+
+@media(max-width:760px){
+    .row{
+        margin-top: 40px;
+    }
+    .datos{
+        overflow-y: scroll;
+        height: 18rem;
+    }
+}

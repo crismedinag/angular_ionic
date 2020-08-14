@@ -1,0 +1,18 @@
+.row{
+    margin-top: 80px;
+}
+
+.btn{
+    background-color: var(--shadow-color);
+    border-radius: 5px;
+    color: var(--secondary-color);
+    margin-top: 5px;
+}
+
+.volver{
+    margin-top: 10px;
+    font-size: 2.2em;
+    color: var(--secondary-color);
+    cursor: pointer; 
+}
+

@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+  
+  <div class="volver">
+    <a (click)="_location.back()"><i class="fas fa-arrow-circle-left"></i></a>
+  </div>
+
+  <form class="col-md-3">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Nombre" #ciudad>
+      <input type="text" class="form-control" placeholder="País" #pais>
+      <input type="text" class="form-control" placeholder="Código" #codigo>
+      <button type="button" class="btn" id="btn" (click)="add(ciudad.value, pais.value, codigo.value)">Insertar
+        ciudad</button>
+    </div>
+  </form>
+
+  <form class="col-md-3">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Código" #codigo_edit>
+      <input type="text" class="form-control" placeholder="Nuevo nombre" #nombre>
+      <button type="button" class="btn" id="btn" (click)="edit(codigo_edit.value, nombre.value)">Modificar
+        nombre</button>
+    </div>
+  </form>
+
+  <form class="col-md-3">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Código" #codigoB>
+      <button type="button" class="btn" id="btn" (click)="delete(codigoB.value)">Borrar ciudad</button>
+    </div>
+  </form>
+
+</div>
