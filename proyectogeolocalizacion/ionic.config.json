@@ -1,0 +1,7 @@
+{
+  "name": "proyectogeolocalizacion",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
